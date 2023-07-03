@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Muffin's Main Menu</title>
+
+    <style>
+        @font-face {
+         font-family: 'Determination';
+         src: url('./assets/fonts/DTM-Mono.otf');
+        }
+
+        body{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: black;
+            font-family: 'Determination';
+            height: 95vh;
+            
+        }
+        .soul{
+            position: absolute;
+            display: flex;
+            margin-top: 60vh;
+            color: white;
+            scale: 2;
+        }
+
+        .svgscale{
+            scale: 2;
+        }
+
+        .dialog-text{
+            position: absolute;
+            top: 5px;
+            left: 80px;
+        }
+
+        .dialog-protrait{
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+    </style>
+    <script src="node_modules/wavesurfer.js/dist/wavesurfer.min.js"></script>
+    <script type="module" src="render.js"></script>
+</head>
+<body>
+    <div>
+        <div class='svgscale'>
+            <img src='./assets/light-world-dialogbox.svg' ></img>
+            <audio id="myAudio">
+                <source src="./assets//audio/snd_jo2.wav" type="audio/wav">
+            </audio>
+            <div class='dialog-protrait'><img id ="dialog-protrait" src='' ></img></div>
+            <div id="dialogText" class='dialog-text'></div>
+        </div>
+      </div>
+      <div class="soul">
+        <p style="background: none; outline: none;">
+            <img id="soul_record" src="./assets/white_soul.svg">
+        </p>
+      </div>
+      <div id="waveform" class="soul"></div>
+      <script type="module">
+
+      </script>
+</body>
+</html>
